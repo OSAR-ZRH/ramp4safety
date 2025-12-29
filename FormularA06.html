@@ -46,7 +46,7 @@
     </div>
 
     <div>
-      <label for="aussage">Wie kam es zu diesem Verstoss? - Aussage Person</label>
+      <label for="aussage">Wie kam es zu diesem Verstoss? / Aussage Person</label>
       <textarea id="aussage" name="aussage"></textarea>
     </div>
 
@@ -87,7 +87,7 @@
 
     function toText(values) {
       return Object.entries(values)
-        .map(([k,v]) => `${k}: ${v || "-"}`)
+        .map(([k,v]) => `${k}: ${v || "keine Angabe"}`)
         .join("\n");
     }
 
@@ -118,6 +118,7 @@
   </script>
 </body>
 </html>
+
 
 
 
